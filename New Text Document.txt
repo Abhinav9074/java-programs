@@ -1,0 +1,21 @@
+class OverloadDemo{
+
+int sum(int x,int y){
+int sum=x+y;
+return sum;
+}
+int sum(int a,int b,int c){
+int sum=a+b+c;
+return sum;
+}
+}
+class Overload{
+public static void main(String args[]){
+OverloaDemo c1=new OverloadDemo;
+int result=c1.sum(10,20);
+int result2=c1.sum(10,20,30);
+System.out.println("result1"+result);
+System.out.println("result2"+result2);
+}
+}
+
